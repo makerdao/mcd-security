@@ -2,12 +2,15 @@
 
 This repository is dedicated to providing transparency to our community with respect to the results of our MCD Audits, our Bug Bounty Program and Formal Verification. 
 
-## 1. [Audit Reports]
+## 1. Updates On MCD Security Roadmap
+- [MCD Bug Bounty Announcement and Security Roadmap Update](https://blog.makerdao.com/mcd-bug-bounty-announcement-and-security-roadmap-update/) *July 24, 2019*
+
+## 2. [Audit Reports](https://github.com/makerdao/mcd-security/tree/master/Audit%20Reports)
 
 
-## 2. [Bug Bounty Program]
+## 3. [Bug Bounty Program](https://github.com/makerdao/mcd-security/tree/master/Bug%20Bounty%20Program)
 
 
-## 3. [Formal Verification (FV)]
+## 4. [Formal Verification](https://github.com/makerdao/mcd-security/tree/master/Formal%20Verification)
 
 
