@@ -10,33 +10,45 @@ We determined that the best strategy to maximize security would be to combine ou
 # Updates and Results
 
 ### Runtime Verification Update
-- The Runtime Verification team has completed its high-level model of the core MCD system and has begun building models on 
-the other modules.  We expect this work to be completed this fall (estimated to be concluded at the beginning of November). 
+- Runtime Verification, an Illinois-based software analysis company, uses runtime verification-based techniques to improve the safety, reliability, and technical “correctness” of software systems. The Runtime Verification team has completed its high-level model of the core MCD system and has begun building models of the other modules. The team expects to complete their work late this fall, likely by the end of November. 
 
 ### Trail of Bits Final Audit Report 
-- Identified 2 medium-severity issues, 4 low-severity issues, and 8 informational security issues.
-- The ToB team directly mentions in their audit report that our team’s use of formal verification eliminated much of the “low-hanging fruit” in terms of vulnerabilities, and they recommend its continued use.
-- Trail of Bits had one finding concerning the DSR. We understand the perceived issue and have come to the conclusion that we do not believe making “locking” more meaningful is the correct direction that the system should use. We are exploring possibilities in the future of applying the DSR to Dai throughout the system and thereby removing the need for locking, but this will require an "upgrade" and will have to be proposed and debated through the Governance process. In the meantime, we agree with the risks of users' non-standard ERC-20 proxies for the DSR and have begun R&D on a Proof of Concept (POC) implementation. As always we recommend users practice caution when using 3rd party smart contracts to interact with the MCD system.
+Trail of Bits, a world leader in security, has audited our MCD smart contracts. The company audits products and networks, and consults on the modifications necessary for secure system deployment. Read ToB’s final audit report.
+
+**Summary of Findings**
+- The Trail of Bits (ToB) team identified two medium-severity issues, four low-severity issues, and eight informational security issues.
+- In its audit report, the ToB team noted that our use of formal verification eliminated much of the “low-hanging fruit” in terms of vulnerabilities, and recommended continued use.
+- ToB had one specific finding concerning the DSR that we want to address here (source, pp. 22). We understand the perceived issue and are exploring the possibilities of how we could apply the DSR to Dai throughout the system. In the meantime, we agree with the risks of users' non-standard ERC-20 proxies for the DSR and have begun R&D on a proof-of-concept implementation. As always, we recommend users practice caution when using third-party smart contracts to interact with the MCD system.
 - [Final Audit Report](https://github.com/makerdao/mcd-security/blob/master/Audit%20Reports/TOB_MakerDAO_Final_Report.pdf)
 
 ### Peckshield Final Audit Report 
-- Identified 1 high-severity issue, 1 medium-severity issue, 4 low-severity issues, and 10 informational security issues.
-- 0 bugs found from Peckshield’s “17 Typical Smart Contract Coding Bugs” list. 
+- PeckShield, a security services organization based in China, had previously and independently verified the Maker DSChief vulnerability that was patched in May. Therefore, we contracted them to do a formal audit. 
+**Summary** 
+- The Peckshield team identified one high-severity issue (previously discovered through the bug bounty program), one medium-severity issue, four low-severity issues, and 10 informational security issues.
+- In its audit report, the team recognized our independent security efforts: “We always recommend proceeding with several independent audits and a public bug bounty program to ensure the security of smart contract(s).” 
+- Zero bugs noted in Peckshield’s “17 Typical Smart Contract Coding Bugs” list were found. 
 - [Final Audit Report](https://github.com/makerdao/mcd-security/blob/master/Audit%20Reports/PeckShield_Final_Audit_Report.pdf)
+
+### Third-Party Audit Results
+
+In addition to the audit results provided by the three contracted organizations noted above, we were contacted by a third-party security firm, Certora, who presented findings after reviewing the MCD code on their own and with their own tools. We want to thank Certora for independently verifying two important vulnerabilities.
+
 
 ## In Summary 
 
-**To summarize, the overall efforts of the security audits have covered the following areas:**
-- The DSS System
+**Overall, security audits have covered the following areas within MCD:**
+- The core Maker Protocol
 - Incentive reasoning
 - DoS, Replay, Front-running, System/Blockchain-level attacks 
 - Governance Attacks
 - Governance (general)
-- Front-end contracts & collateral adapters
+- Front-end contracts and collateral adapters
 - Oracles
 - Off-chain price-feed infrastructure
 - On-chain oracle contracts
-- System deployment & Permissions correctness
+- System deployment and Permissions correctness
+- Auctions
 - K-dss
 
-With respect to the audit results from Trail of Bits and Peckshield, we have already taken the necessary steps to evaluate and mitigated the issues we felt were necessary pre-launch. In addition to the 3 auditors’ findings, we were contacted by 3rd party security firms, such as Certora who have been reviewing the MCD code with their own tools and reporting their own great findings. Certora verified two issues through its own formal verification measure. We will continue to work with the auditors to verify that our mitigation efforts have completely addressed the important issues. 
+
+Our efforts from all four security tracks have resulted in the discovery of a number of bugs, including some high- and critical-severity issues. We’ve taken steps to evaluate and mitigate these issues, and we will continue to work with auditors to verify that we have completely addressed them pre-MCD launch. 
