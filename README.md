@@ -1,6 +1,6 @@
 # Multi-Collateral DAI \(MCD\) Security
 
-This repository is dedicated to providing transparency to our community with respect to the results of our MCD Audits, our Bug Bounty Program and Formal Verification.
+This repository is dedicated to providing transparency to our community with respect to the results of our MCD Audits, our Bug Bounty Program, and Formal Verification. It is important to note that this release is the first version and we will continue to add information as it becomes available.
 
 ## 1. Updates On MCD Security Roadmap
 
@@ -11,4 +11,5 @@ This repository is dedicated to providing transparency to our community with res
 ## 3. [Bug Bounty Program](https://github.com/makerdao/mcd-security/blob/master/bug-bounty-program.md)
 
 ## 4. [Formal Verification](https://github.com/makerdao/mcd-security/blob/master/formal-verification.md)
+
 
