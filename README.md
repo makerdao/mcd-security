@@ -6,10 +6,10 @@ This repository is dedicated to providing transparency to our community with res
 
 * [MCD Bug Bounty Announcement and Security Roadmap Update](https://blog.makerdao.com/mcd-bug-bounty-announcement-and-security-roadmap-update/) _July 24, 2019_
 
-## 2. [Audit Reports](https://github.com/makerdao/mcd-security/tree/master/Audit%20Reports)
+## 2. [Audit Reports](https://security.makerdao.com/audit-reports)
 
-## 3. [Bug Bounty Program](https://github.com/makerdao/mcd-security/blob/master/bug-bounty-program.md)
+## 3. [Bug Bounty Program](https://security.makerdao.com/bug-bounty-program)
 
-## 4. [Formal Verification](https://github.com/makerdao/mcd-security/blob/master/formal-verification.md)
+## 4. [Formal Verification](https://security.makerdao.com/formal-verification)
 
 
