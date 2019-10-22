@@ -22,7 +22,7 @@ the other modules.  We expect this work to be completed this fall (estimated to 
 ### Peckshield Final Audit Report 
 - Identified 1 high-severity issue, 1 medium-severity issue, 4 low-severity issues, and 10 informational security issues.
 - 0 bugs found from Peckshield’s “17 Typical Smart Contract Coding Bugs” list. 
-- [Final Audit Report](https://github.com/makerdao/mcd-security/blob/master/Audit%20Reports/PeckShield_MakerDAO_Final_Report.pdf)
+- [Final Audit Report](https://github.com/makerdao/mcd-security/blob/master/Audit%20Reports/PeckShield_Final_Audit_Report.pdf)
 
 ## In Summary 
 
