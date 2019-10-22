@@ -8,7 +8,7 @@ This repository is dedicated to providing transparency to our community with res
 
 ## 2. [Audit Reports](https://github.com/makerdao/mcd-security/tree/master/Audit%20Reports)
 
-## 3. [Bug Bounty Program](https://github.com/makerdao/mcd-security/tree/master/Bug%20Bounty%20Program)
+## 3. [Bug Bounty Program](https://github.com/makerdao/mcd-security/blob/master/bug-bounty-program.md)
 
-## 4. [Formal Verification](https://github.com/makerdao/mcd-security/tree/master/Formal%20Verification)
+## 4. [Formal Verification](https://github.com/makerdao/mcd-security/blob/master/formal-verification.md)
 
