@@ -1,6 +1,6 @@
 # Formal Verification
 
-Overall, the MCD system's core contracts have been fully formally verified, and the verification of peripheral and helper contracts is ongoing. We are now currently working on the formal verification of the tokens that may be voted in as new collateral types, focusing on formally verifying the secondary contracts as well as the governance contracts in the system, and have incorporated formal verification into our continuous testing and release processes. In terms of our in-house efforts, we are leveraging klab, KEVM, and the K Framework for our Formal verification processes \(as pictured below\).
+Overall, the MCD system's core contracts have been fully formally verified, and the verification of peripheral and helper contracts is ongoing. We are now currently working on the formal verification of the tokens that may be voted in as new collateral types, focusing on formally verifying the secondary contracts as well as the governance contracts in the system, and have incorporated formal verification into our continuous testing and release processes. In terms of our in-house efforts, we are leveraging klab, KEVM, and the K Framework for our Formal verification processes.
 
 **Small-step semantics:**
 
