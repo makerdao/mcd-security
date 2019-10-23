@@ -5,6 +5,7 @@ This repository is dedicated to providing transparency to our community with res
 ## 1. Updates On MCD Security Roadmap
 
 * [MCD Bug Bounty Announcement and Security Roadmap Update](https://blog.makerdao.com/mcd-bug-bounty-announcement-and-security-roadmap-update/) _July 24, 2019_
+* [MCD Security Roadmap Update](https://blog.makerdao.com/mcd-security-roadmap-update-october-2019/) _October 23, 2019_
 
 ## 2. [Audit Reports](https://security.makerdao.com/audit-reports)
 
