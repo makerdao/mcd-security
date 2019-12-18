@@ -2,16 +2,23 @@
 
 We determined that the best strategy to maximize security would be to combine our formal verification efforts with more traditional security audits paired with higher-level formal modeling. Therefore, we partnered with three leading independent security auditors to protect against logical errors and/or potential failure modes in the contract logic. 
 
-**The following industry experts focused on:** 
-- **[Trail of Bits](https://www.trailofbits.com/)** - security reviews of our smart contracts. 
-- **[PeckShield](https://peckshield.com/)** - traditional audit. 
-- **[Runtime Verification](https://runtimeverification.com/smartcontract/)** - creating a high-level formal model that can be used to further verify the logic of the system.
+**The following industry experts focused on:**
+- **[Trail of Bits](https://www.trailofbits.com/)** - security reviews of our smart contracts.
+- **[PeckShield](https://peckshield.com/)** - traditional audit.
+- **[Runtime Verification](https://runtimeverification.com/smartcontract/)** - high-level formal model that can be used to further verify the logic of the system.
 
 # Updates and Results
 
-### Runtime Verification Update
+### [Runtime Verification Specification](https://github.com/makerdao/mkr-mcd-spec)
 
-Runtime Verification, an Illinois-based software analysis company, uses runtime verification-based techniques to improve the safety, reliability, and technical “correctness” of software systems. The Runtime Verification team has completed its high-level model of the core MCD system and has begun building models of the other modules. The team expects to complete their work late this fall, likely by the end of November. 
+Runtime Verification, an Illinois-based software analysis company, uses runtime verification-based techniques to improve the safety, reliability, and technical “correctness” of software systems. The modelling and review components of Runtime Verification’s engagement have been delivered. [The code repository can be found in the MakerDAO’s Github](https://github.com/makerdao/mkr-mcd-spec).
+
+The project involved a review of the DSS source code, the development of a K specification that described the high-level behaviors of MCD core and the overall state-updates that each operation in the system should have. It also included reproducing the issues found through our other review and the bug bounty program and adding those tests to the specification. Lastly, it included a random tester and bounded model checker that run on both concrete and symbolic back-ends to ensure the properties hold.
+
+While this engagement has been focused more on designing and building the specification than a traditional audit of the code, it did identify several improvements that could be made in the code and integrated known/previous bugs to give us reasonable confidence in the model's ability to identify similar bugs. Going forward this specification and the resulting model can be used to check that changes to the protocol do not violate the specified system behaviors. We are continuing this work by focusing on applying and directing the tester over random and real world events and continuing to add to the high-level properties of the specification.
+
+The random tester can generate arbitrary sequences of transactions for testing and test them against the known properties of the system. These properties are document the intended behavior of the system and act as checks against the traces that the random tester generates.
+Future governance updates to system parameters and changes to the MCD system itself can be tested against the high-level model and random tester before deploying to mainnet to ensure they do not unintentionally violate the desired system properties. If it is desirable to change the properties, the model and testing can be used to show how the proposed change alters the overall behavior of the system.
 
 ### [Trail of Bits Final Audit Report](https://github.com/makerdao/mcd-security/blob/master/Audit%20Reports/TOB_MakerDAO_Final_Report.pdf)
 
