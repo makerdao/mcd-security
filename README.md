@@ -7,6 +7,7 @@ This repository is dedicated to providing transparency to our community with res
 * [MCD Bug Bounty Announcement and Security Roadmap Update](https://blog.makerdao.com/mcd-bug-bounty-announcement-and-security-roadmap-update/) _July 24, 2019_
 * [MCD Security Roadmap Update](https://blog.makerdao.com/mcd-security-roadmap-update-october-2019/) _October 23, 2019_
 * [Publication of the Runtime Verification Audit](https://forum.makerdao.com/t/publication-of-the-runtime-verification-audit/976) _December 19, 2019_
+* [Liquidations 2.0 Upgrade](https://forum.makerdao.com/t/mip45-liquidations-2-0-liq-2-0-liquidation-system-redesign/6352) _April 12, 2021_  __
 
 ## 2. [Audit Reports](https://security.makerdao.com/audit-reports)
 
@@ -14,4 +15,5 @@ This repository is dedicated to providing transparency to our community with res
 
 ## 4. [Formal Verification](https://security.makerdao.com/formal-verification)
 
+## 5. [Liquidations 2.0 Upgrade](liquidations-2.0.md)
 
